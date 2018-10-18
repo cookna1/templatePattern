@@ -12,6 +12,7 @@ public class hangman extends Game {
     Scanner input;
 
     protected void initialize() {
+        System.out.println("Initializing");
         input = new Scanner(System.in);
         turns = 7;
         guesses = "";
@@ -26,6 +27,7 @@ public class hangman extends Game {
     }
 
     public void loadContent() {
+        System.out.println("Loading Content");
         rand = new Random();
         word = words[rand.nextInt(27)];
         gameSoFar = new char[word.length()];
